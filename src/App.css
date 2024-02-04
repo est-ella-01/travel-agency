@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+:root {
+    --text: #030508;
+    --background: #fafbfd;
+    --primary: #587bbe;
+    --secondary: #da9fad;
+    --accent: #cca27c;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text)
+}
+
+.main-container {
+  background-image: url(https://picsum.photos/id/93/1800/1200);
+  background-position: center;
+  background-repeat: repeat;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+}
+
+i {
+    color: transparent;
+    background-image: linear-gradient(45deg, var(--secondary), var(--primary));
+    background-clip: text;
+    
+}
+
+/*navbar*/
+nav {
+    background-color: var(--background);
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 2.5rem;
+    z-index: 10000;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/*footer*/
+footer {
+    background-color: var(--background);
+    opacity: 0.8;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    height: 2.5rem;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 420px) {
+    footer {
+        font-size: 0.6rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 421px) {
+    footer {
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+/*content body*/
+.article_content{
+    background-color: var(--background);
+    border-radius: 1em;
+    text-align: justify;
+    max-width: 900px;
+}
+
+.content-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.blurred-bg{
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+
+button {
+    border: none;
+    border-radius: 0.5rem!important;
+    background-color: var(--primary);
+    padding: 0.3rem 0.8rem;
+    color: var(--background)
+}
+
+button:hover {
+    background-color: var(--secondary);
+}
+
+.text-link{
+    color: var(--primary)
+}
+
+.text-link:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+/*cards*/
+.card img {
+    height: 15rem;
+}
+
+.card h5 {
+    color: var(--primary);
+}
